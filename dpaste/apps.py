@@ -10,6 +10,7 @@ log = getLogger(__file__)
 class dpasteAppConfig(AppConfig):
     name = "dpaste"
     verbose_name = "dpaste"
+    CSRF_COOKIE_SECURE = False
 
     # The application title used throughout the user interface.
     APPLICATION_NAME = "dpaste"
